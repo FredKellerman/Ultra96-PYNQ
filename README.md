@@ -58,11 +58,10 @@ Pre-built Ultra96 v1 and v2 BSPs and overlays for the current release are includ
 Alternatively, if you would like to start with your own or a new BSP [see notes at bottom](#build-pynq-compatible-bsps-from-scratch).
 When you prepare the new BSP by yourself, the overlay files will have to be prepared as well.
 
-**IMPORTANT: download either the ultra96v1_bsp.zip (for U96 v1) or the ultra96v2_bsp.zip (for U96 v2) and extract the contents.**
-
-**IMPORTANT: place either the v1 (sensors96b_v1.bsp) or v2 (sensors96b_v2.bsp) BSP file into the `$LOCAL_ULTRA96/Ultra96` folder.**
-
-**IMPORTANT: from the same zip file (for either the v1 or v2) place both sensor96b.hwh and .bit files into the `$LOCAL_ULTRA96/Ultra96/sensors96b` folder.**
+#### Download assets to prepare for the build
+ 1. Download either the ultra96v1_bsp.zip (for U96 v1) or the ultra96v2_bsp.zip (for U96 v2) and extract the contents.
+ 2. Place either the v1 (sensors96b_v1.bsp) or v2 (sensors96b_v2.bsp) BSP file into the `$LOCAL_ULTRA96/Ultra96` folder.
+ 3. From the same zip file (for either the v1 or v2) place both sensor96b.hwh and .bit files into the `$LOCAL_ULTRA96/Ultra96/sensors96b` folder.
 
 Next you must setup soft links depending upon whether you are using Ultra96 v1 or v2.
 
