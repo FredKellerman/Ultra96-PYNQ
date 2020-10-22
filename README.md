@@ -22,7 +22,7 @@ Building PYNQ for Ultra96 can take many hours to complete.  Plan accordingly!
 
 **Required tools:**
 
-* Ubuntu 16.04 LTS 64-bit host PC
+* Ubuntu 16.04 or 18.04 LTS 64-bit host PC
 * Passwordless SUDO privilege for the building user
 * At least 160GB of free hard disk space if you do not have the Xilinx tools installed yet
 * Roughly 80GB of free hard drive space if you have the Xilinx tools installed
@@ -56,11 +56,13 @@ git checkout -b image_v2.6.0 origin/image_v2.6.0
 Pre-built Ultra96 v1 and v2 BSPs and overlays for the current release are included under the [GitHub Release File Assets](https://github.com/Avnet/Ultra96-PYNQ/releases).
 
 Alternatively, if you would like to start with your own or a new BSP [see notes at bottom](#build-pynq-compatible-bsps-from-scratch).
-When you prepare the new BSP by yourself, the overlay files will be prepared as well.
+When you prepare the new BSP by yourself, the overlay files will have to be prepared as well.
 
-**IMPORTANT: place the v1 (sensors96b_v1.bsp) or v2 (sensors96b_v2.bsp) BSP in the `$LOCAL_ULTRA96/Ultra96` folder.**
+**IMPORTANT: download either the ultra96v1_bsp.zip (for U96 v1) or the ultra96v2_bsp.zip (for U96 v2) and extract the contents.**
 
-**IMPORTANT: place the v1 (sensors96b.bit, sensors96b.hwh) or v2 (sensors96b.bit, sensors96b.hwh) overlay files in the `$LOCAL_ULTRA96/Ultra96/sensors96b` folder.**
+**IMPORTANT: place either the v1 (sensors96b_v1.bsp) or v2 (sensors96b_v2.bsp) BSP file into the `$LOCAL_ULTRA96/Ultra96` folder.**
+
+**IMPORTANT: from the same zip file (for either the v1 or v2) place both sensor96b.hwh and .bit files into the `$LOCAL_ULTRA96/Ultra96/sensors96b` folder.**
 
 Next you must setup soft links depending upon whether you are using Ultra96 v1 or v2.
 
